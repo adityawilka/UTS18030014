@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ujian Tengah Semester"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="20px"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="69dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIM"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="126dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/nama_mahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nama Mahasiswa" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="190dp">
+
+        <RadioButton
+            android:id="@+id/kelasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas A" />
+
+        <RadioButton
+            android:id="@+id/kelasb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas B" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/kirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SEND DATA"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+</LinearLayout>
