@@ -21,7 +21,9 @@ TextView Tmatkul,Tdosen, Tsks, Ttanggal, Tsifat, Tstudi, Tnim, Tnama, Tkelas;
         Tnim = (TextView) findViewById(R.id.tampilnim);
         Tnama = (TextView) findViewById(R.id.nama_mahasiswa);
         Tkelas = (TextView) findViewById(R.id.tampilkelas);
-// Menampilkan
+
+        
+// Menampilkan data yang sudah diinputkan pada tampilan sebelumnya yaitu tampil2=============
         if (getIntent().getStringExtra("matkul") != null) {
             String matkul = getIntent().getStringExtra("matkul");
             String studi = getIntent().getStringExtra("studi");

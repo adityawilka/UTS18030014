@@ -116,6 +116,7 @@ public class tampil2 extends AppCompatActivity {
 
             }
         });
+        //=========================== Fungsi untuk button submit dan mengirimkan data ke tampilan activity2========================
         submit = (Button)findViewById(R.id.kirim);
         submit.setOnClickListener(new OnClickListener() {
             @Override
@@ -130,10 +131,7 @@ public class tampil2 extends AppCompatActivity {
                 tampil_nama_mhsiswa = Tnama_mahasiswa.getText().toString();
                 tampil_kel = Tkelas.getText().toString();
 
-//                int Itgl = txt_tgl.getText().toString();
-//                Tanggal = findViewById(Itgl);
-//                String nilairadio = Tanggal.getText().toString();
-//                //Toast.makeText(MainActivity.this,"nilairadio :"+nilairadio,Toast.LENGTH_LONG).show();
+
 
                 Intent i = new Intent(tampil2.this, MainActivity2.class);
                 i.putExtra("matkul",input_matkul);

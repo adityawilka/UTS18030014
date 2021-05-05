@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Inam_mahasiswa = (EditText)findViewById(R.id.nama_mahasiswa);
         Inputkel = (RadioGroup)findViewById(R.id.kelas);
 
+        //================================Fungsi Button Kirim============================
+        //dikirim ke tampilan2
          submit = (Button)findViewById(R.id.kirim);
         submit.setOnClickListener(new OnClickListener() {
             @Override
